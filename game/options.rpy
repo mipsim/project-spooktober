@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("ProjectSpooktober")
+define config.name = _("Project Spooktober")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,13 +23,30 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "v0.0.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+    Visual Novel developed by CHQ
+
+    Angela Do - Character Art
+
+    Annie Zhang - Art Direction, UI Art, Composer
+
+    Avery Weibel - *
+
+    Eli Miller - Sound Design
+
+    Joseph Wang - Narrative Design
+
+    Kat Gee - Concept Art
+
+    Michael Sim - Programming, Production
+
+    Patrick Villegas - Narrative Design
 """)
 
 
@@ -62,6 +79,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
+## FIXME
 # define config.main_menu_music = "main-menu-theme.ogg"
 
 

@@ -1,0 +1,18 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/actTwo.rpy", line 47: expected 'label_name' not found.
+    jump menu choose_item
+        ^
+
+File "game/scripts/actTwo.rpy", line 67: expected 'label_name' not found.
+    jump menu choose_item
+        ^
+
+File "game/scripts/actTwo.rpy", line 81: expected 'label_name' not found.
+    jump menu choose_item
+        ^
+
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Tue Sep 13 23:06:11 2022

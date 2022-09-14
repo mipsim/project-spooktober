@@ -1,18 +1,28 @@
 ﻿# Start
 label start:
-    scene bg temp1
-    with dissolve
+    jump actOne
 
-    show kellum_base
-    with easeinbottom
+label return_actOne:
+    jump actTwo
+
+label return_actTwo:
+    jump actThree
+
+label return_actThree:
+    jump ending
+
+#DELETEME
+#    scene bg temp1
+#    with dissolve
+
+#    show kellum_base
+#    with easeinbottom
 
     # play music "audio/---.mp3"
 
-    kt "Hey there."
-    kt "Are you a witch?"
-    kt "Because you look magical ;^)"
-
-    jump ending
+#    kt "Hey there."
+#    kt "Are you a witch?"
+#    kt "Because you look magical ;^)"
 
 label ending:
     return

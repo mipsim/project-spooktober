@@ -7,6 +7,8 @@ define st = Character("Stitch", color ="#D53918")
 define bb = Character("Big Brain", color ="#D53918")
 define fi = Character("Filbo", color ="#C19F97")
 
+# Backgrounds
+image bg2a = "bg KellumRoom.png"
 
 # Variables
 # Act One

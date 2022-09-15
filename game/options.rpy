@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "v0.0.2"
+define config.version = "v0.0.3"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -36,7 +36,7 @@ define gui.about = _p("""
 
     Annie Zhang - Art Direction, UI Art, Composer
 
-    Avery Weibel - *
+    Avery Weibel - Narrative Design
 
     Eli Miller - Sound Design
 
@@ -46,7 +46,7 @@ define gui.about = _p("""
 
     Michael Sim - Programming, Production
 
-    Patrick Villegas - Narrative Design
+    Patrick Villegas - Narrative Director
 """)
 
 

@@ -25,4 +25,7 @@ label return_actThree:
 #    kt "Because you look magical ;^)"
 
 label ending:
+    scene bg black
+    with dissolve
+
     return

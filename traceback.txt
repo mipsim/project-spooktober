@@ -1,36 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/actTwo.rpy", line 12, in script
-    "[DEBUG: Intro]"
-KeyError: 'DEBUG'
+  File "game/scripts/actTwo.rpy", line 18, in script
+    menu choose_item:
+SyntaxError: invalid syntax (game/scripts/actTwo.rpy, line 30)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/actTwo.rpy", line 12, in script
-    "[DEBUG: Intro]"
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\character.py", line 1253, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\character.py", line 1172, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\character.py", line 1152, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
-KeyError: 'DEBUG'
+  File "game/scripts/actTwo.rpy", line 18, in script
+    menu choose_item:
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 1903, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 976, in menu
+    condition = renpy.python.py_eval(condition)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1081, in py_eval
+    code = py_compile(code, 'eval')
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1018, in py_compile
+    raise e
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 970, in py_compile
+    raise orig_e
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 963, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/scripts/actTwo.rpy, line 30)
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
-Project Avadakadabra v0.0.1
-Tue Sep 13 23:07:15 2022
+Project Avadakadabra v0.0.2
+Wed Sep 14 22:16:44 2022

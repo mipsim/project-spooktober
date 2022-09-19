@@ -8,7 +8,13 @@ define bb = Character("Big Brain", color ="#D53918")
 define fi = Character("Filbo", color ="#C19F97")
 
 # Backgrounds
+image de_base = "detective_temp2.png"
+image de_base_dark = "detective_temp2_dark.png"
+image kt_base = "kellum_temp.png"
+image kt_base_dark = "kellum_temp_dark.png"
 image bg2a = "bg KellumRoom.png"
+image bg3a = "bg hallway.png"
+image bg3b = "bg destroyedHall.png"
 
 # Variables
 # Act One
@@ -23,5 +29,8 @@ default itemIngredients_checked = False
 # default ph_date = False
 
 # Animation
-# transform ph_intro_one:
-#    xalign -1.0
+transform twoChar_xOne:
+    xalign -0.1
+
+transform twoChar_xTwo:
+    xalign 1.5

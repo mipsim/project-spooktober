@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/actTwo.rpy", line 18, in script
-    menu choose_item:
-SyntaxError: invalid syntax (game/scripts/actTwo.rpy, line 30)
+  File "game/scripts/actThree.rpy", line 31, in script
+    "I may not be 100% just yet, for some reason this university comes to me naturally, as if it were the back of my hand."
+ValueError: unsupported format character 'j' (0x6a) at index 18
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/actTwo.rpy", line 18, in script
-    menu choose_item:
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 1903, in execute
-    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 976, in menu
-    condition = renpy.python.py_eval(condition)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1081, in py_eval
-    code = py_compile(code, 'eval')
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1018, in py_compile
-    raise e
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 970, in py_compile
-    raise orig_e
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 963, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/scripts/actTwo.rpy, line 30)
+  File "game/scripts/actThree.rpy", line 31, in script
+    "I may not be 100% just yet, for some reason this university comes to me naturally, as if it were the back of my hand."
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 1362, in say
+    what = what % tag_quoting_dict
+ValueError: unsupported format character 'j' (0x6a) at index 18
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
-Project Avadakadabra v0.0.2
-Wed Sep 14 22:16:44 2022
+Project Avadakadabra v0.0.4
+Sun Sep 18 16:56:01 2022

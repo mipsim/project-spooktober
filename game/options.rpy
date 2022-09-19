@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "v0.0.3"
+define config.version = "v0.0.5"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -80,7 +80,7 @@ define config.has_voice = True
 ## game, until it is stopped or another file is played.
 
 ## FIXME
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/menu.mp3"
 
 
 ## Transitions #################################################################

@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/scripts/dict.rpy", line 33: expected 'comma or end of line' not found.
-    zorder 1.0,
-    ^
+File "game/scripts/actTwo.rpy", line 64: expected statement.
+    kt_villain = kt_villian + 1
+               ^
+
+File "game/scripts/actTwo.rpy", line 72: expected statement.
+    kt_hero = kt_hero + 1
+            ^
+
+File "game/scripts/actTwo.rpy", line 79: expected statement.
+    kt_victim = kt_victim + 1
+              ^
+
+File "game/scripts/actTwo.rpy", line 224: expected statement.
+    kt_villain = kt_villian + 1
+               ^
+
+File "game/scripts/actTwo.rpy", line 233: expected statement.
+    kt_hero = kt_hero + 1
+            ^
+
+File "game/scripts/actTwo.rpy", line 240: expected statement.
+    kt_victim = kt_victim + 1
+              ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sun Sep 18 17:11:37 2022
+Mon Sep 19 19:46:39 2022

@@ -30,24 +30,56 @@ menu choose_item:
 
 label item_bookshelf:
     de "Let's see, anything interesting?"
-    de "'Legal history of transmogrification.'"
-    de "Nope."
-    de "'Counter Inductive Spell structures for Undergrads.'"
-    de "No thanks."
-    de "'Notes on the use of spark spells in general combat.'"
-    de "Yeah I'll pass."
+    de "\"Legal History of Transmogrification\""
+    de "\"Counter Inductive Spell Structures for Undergrads\""
+    de "\"Notes on the Use of Spark Spells in General Combat.\""
+    de "Decent study material, but none of it is particularly relevant to the case at hand."
     de "Hmmm...this one seems interesting."
-    de "'Caster in the rye.'"
+    de "\"Caster in the Rye\""
     de "It was required reading at my magic school, but I can't imagine it's part of any modern curriculum."
     de "Not that it means anything on its own, but let's just hope he doesn't identify with the main character too much."
-    de "Ah, here's something interesting!"
-    de "'Skill improvement 7th edition.'"
+    de "Ah, here's something different!"
+    de "\"Skill Improvement 7th edition.\""
     de "These books are supposed to be banned from university."
-    de "They use enchanted ink to automatically make you a better magician."
-    de "Useful for improving worker productivity, but it doesn't actually transfer any knowledge of how the magic works."
-    de "It's strange the Kellum would have anything to do with it."
-    de "Usually students using books like this get found out when someone asks them a slightly too intelligent question."
+    de "They use enchanted ink to automatically improve your magical aptitude."
+    de "Useful for improving worker productivity, but it doesn't transfer any base knowledge of how the magic works."
 
+menu de_choice1:
+    de "Now why would Kellum have something like this?"
+
+    "He must have been trying to cheat on his exams.":
+        jump de_choice1_a
+
+    "He probably got it to give to another student.":
+        jump de_choice1_b
+
+    "Maybe he didn't know what it was meant to be used for?":
+        jump de_choice1_c
+
+label de_choice1_a:
+    de "In the hands of an amateur, books like this will only cause undue suspicion."
+    de "When paired with someone who knows exactly what they're doing, he could push his abilities far past their limits."
+    de "And it doesn't hurt that he would get academic recognition in the process."
+
+    $ kt_villain = kt_villain + 1
+    jump end_bookshelf
+
+label de_choice1_b:
+    de "It would only take a couple questions to expose Kellum for using something like this."
+    de "There's no way he would risk it himself."
+    de "Perhaps he gave this book to someone else to help them with their studies."
+
+    $ kt_hero = kt_hero + 1
+    jump end_bookshelf
+
+label de_choice1_c:
+    de "In a room filled wiht books it's certainly possible he would forget every book he had."
+    de "It's possible another student gave it to him for safekeeping, knowing that he wouldn't draw much suspicion."
+
+    $ kt_victim = kt_victim + 1
+    jump end_bookshelf
+
+label end_bookshelf:
     $ itemBookshelf_checked = True
     jump choose_item
 
@@ -56,7 +88,7 @@ label item_ink:
     de "Of all the thousands of possible actions, not to mention the addition of spells, incantations, imbibements, enchantments and all the rest."
     de "Out of all of those I have to narrow it down to a single..."
     
-    #"-- Display Pawprint"    
+    #"-- Display Paw Print"    
     show de_base_dark with dissolve
     show prop_pawprints at truecenter with easeintop
 
@@ -65,19 +97,20 @@ label item_ink:
     hide prop_pawprints with easeoutbottom
     hide de_base_dark with dissolve
 
-    de "Well, that was quite the simple mystery."
+    de "Well, I guess not everything has to be an enigma."
     de "It seems this ferocious beast has left a trail all the way back to its den: the lower cubby of the autobiography section."
     "-- Opens cubby"
     "-- Dog growls"
     de "Well met familiar, may I ask what you're sitting on?"
     "-- Dog growls again"
-    de "I see, well I won't make any headway just asking it nicely."
+    de "I see."
+    de "Well I won't make any headway with you by just asking nicely."
     
     #"-- Shows cans of empty dog food 'Curio Brand Dog Food.'"
     show de_base_dark with dissolve
     show prop_canempty at truecenter with easeintop
     
-    de "Well, maybe if I can find a can that isn't empty he'll open up to me."
+    de "Maybe if I can find a can that isn't empty he'll open up to me."
 
     hide prop_canempty with easeoutbottom
     hide de_base_dark with dissolve
@@ -86,6 +119,8 @@ label item_ink:
     jump choose_item
 
 label item_ingredients1:
+
+    #"-- Display ingredients"
     show de_base_dark with dissolve
     show prop_ingredients at truecenter with easeintop
 
@@ -95,15 +130,19 @@ label item_ingredients1:
     show prop_canfull at truecenter with easeintop
 
     de "Well, I supposed you could cook with this one."
-
-    hide prop_canfull with easeoutbottom
-    hide de_base_dark with dissolve
-
     #"-- Shows dog food 'Cerberus Chum'"
 
-    de "But the rest are 'medicinal' at best."
+    de "But the rest are \"medicinal\" at best."
+
+    hide prop_canfull with easeoutbottom
+    show prop_ingredients at truecenter with easeintop
+
     de "Let's see here, dogwart, milliweed, griffin's tongue, and snail urine."
     de "All mainstays in the wizarding pharmaceutical industry, but not exactly household names."
+
+    hide prop_ingredients with easeoutbottom
+    hide de_base_dark with dissolve
+
     de "Not that they are hard to get your hands on."
     de "They can all be extracted from stuff you can get over the counter at any wizard clinic worth its summoning salt."
 
@@ -115,10 +154,14 @@ label item_ingredients1:
         jump choose_item
 
 label item_ingredients2:
+    #"-- Shows dog food 'Cerberus Chum'"
+    show de_base_dark with dissolve
+    show prop_canfull at truecenter with easeintop
+
     de "Well I bet I can get that dog to hand over the book he’s protecting with a little state sponsored bribery."
     
     #"-- Fills bowl with food"
-    show de_base_dark with dissolve
+    hide prop_canfull with easeoutbottom
     show prop_bowl at truecenter with easeintop
 
     de "Here buddy, don’t you want some food?"
@@ -126,25 +169,27 @@ label item_ingredients2:
     hide de_base_dark with dissolve
 
     "-- Dog growls"
-    de "Well I guess he has a pretty strong preference for 'Curio Brand'"
+    de "Huh, I guess he only eats the good stuff."
     de "Let's see what we can do for the spoiled mutt."
     "-- Closes the Cubby"
     de "Just a quick little swap...and we are good to go."
     
-    #"-- Gathers the dog food from the bowl into a can of 'Curio Brand Dog Food'"
+    #-- Show a sloppily filled can of Curio
     show de_base_dark with dissolve
     show prop_canfull at truecenter with easeintop
 
-    "-- Opens the Cubby"
     de "Alright, I got you the good stuff this time."
-    hide prop_canfull with easeoutbottom
-    hide de_base_dark with dissolve
-
     de "You like Curio don't you?"
     de "Look I got a fresh new can of it for you"
     "-- Dog is excited"
-    "-- Pours the food into a bowl and pushes it over to the dog"
+
+    #-- Show filled food bowl
+    hide prop_canfull with easeoutbottom
+    show prop_bowl at truecenter with easeintop
     "-- Dog eats it excitedly"
+    hide prop_bowl with easeoutbottom
+    hide de_base_dark with dissolve
+
     de "Perfect, and if you don't mind I'm going to borrow this dog bed from you."
     de "Doesn't look particularly comfortable anyhow."
     
@@ -152,16 +197,51 @@ label item_ingredients2:
     show de_base_dark with dissolve
     show prop_tome at truecenter with easeintop
 
-    de "Well I'll be, We found the smoking gun didn't we Toto?"
+    de "Well I'll be, I believe we found the smoking wand."
     hide prop_tome with easeoutbottom
     hide de_base_dark with dissolve
 
     de "Dark Arts, Summoning Demons, Transforming Flesh, etc. etc."
     de "Not the kind of stuff you get into freshman year."
-    de "These are some real 'I knew them before they were cool' type spells."
-    de "In fact I would be surprised that any student could get ther hands on this without outright stealing it."
-    de "I find that hard to believe with the new advancements in golem security systems."
-    de "Perhaps he got it on loan from someone he trusts?"
+    de "These are some real \"I knew them before they were cool\" type spells."
+
+menu de_choice2:
+    de "Hmmm...How exactly would he have gotten a hold of this?"
+
+    "He stole it from the school's dark magic archives.":
+        jump de_choice2_a
+
+    "He was given it from someone with clearance.":
+        jump de_choice2_b
+
+    "He happened to find it from an Occult shop.":
+        jump de_choice2_c
+
+label de_choice2_a:
+    de "As adept as he seems to be at magic, it's possible he simply duped the school's security team."
+    de "The systems in place are pretty good at preventing physical theft."
+    de "He most likely tricked one of the professors into giving him access."
+
+    $ kt_villain = kt_villain + 1
+    jump end_ingredients2
+
+
+label de_choice2_b:
+    de "I find it hard to believe that he could have infiltrated the school's archives."
+    de "Modern golem security systems have made that much more difficult than it was in the past."
+    de "I'm not sure why, but it's possible someone who had access themselves could have given it to him."
+
+    $ kt_hero = kt_hero + 1
+    jump end_ingredients2
+
+label de_choice2_c:
+    de "I've heard more and more stories about Occult shops popping up with strange and often illegal offerings."
+    de "If Kellum got mixed up with these places, then he might have bought more than he bargained for."
+
+    $ kt_victim = kt_victim + 1
+    jump end_ingredients2
+
+label end_ingredients2:
     de "Either way it puts those ingredients into context."
     de "It's no simple potion he was working on, nothing in this book would be as benign as that."
     de "Here we go, page 478."

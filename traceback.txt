@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/actThree.rpy", line 31, in script
-    "I may not be 100% just yet, for some reason this university comes to me naturally, as if it were the back of my hand."
-ValueError: unsupported format character 'j' (0x6a) at index 18
+  File "game/scripts/actTwo.rpy", line 64, in script
+    $ kt_villain = kt_villian + 1
+  File "game/scripts/actTwo.rpy", line 64, in <module>
+    $ kt_villain = kt_villian + 1
+NameError: name 'kt_villian' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/actThree.rpy", line 31, in script
-    "I may not be 100% just yet, for some reason this university comes to me naturally, as if it were the back of my hand."
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 1362, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character 'j' (0x6a) at index 18
+  File "game/scripts/actTwo.rpy", line 64, in script
+    $ kt_villain = kt_villian + 1
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1052, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/scripts/actTwo.rpy", line 64, in <module>
+    $ kt_villain = kt_villian + 1
+NameError: name 'kt_villian' is not defined
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
-Project Avadakadabra v0.0.4
-Sun Sep 18 16:56:01 2022
+Project Avadakadabra v0.0.5
+Mon Sep 19 19:47:24 2022

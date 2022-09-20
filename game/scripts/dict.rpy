@@ -25,6 +25,9 @@ default itemInk_checked = False
 default itemIngredients_checked = False
 
 # Act Three
+default kt_villain = 0
+default kt_hero = 0
+default kt_victim = 0
 
 # default ph_date = False
 

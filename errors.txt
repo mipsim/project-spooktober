@@ -2,29 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/actTwo.rpy", line 64: expected statement.
-    kt_villain = kt_villian + 1
-               ^
-
-File "game/scripts/actTwo.rpy", line 72: expected statement.
-    kt_hero = kt_hero + 1
-            ^
-
-File "game/scripts/actTwo.rpy", line 79: expected statement.
-    kt_victim = kt_victim + 1
-              ^
-
-File "game/scripts/actTwo.rpy", line 224: expected statement.
-    kt_villain = kt_villian + 1
-               ^
-
-File "game/scripts/actTwo.rpy", line 233: expected statement.
-    kt_hero = kt_hero + 1
-            ^
-
-File "game/scripts/actTwo.rpy", line 240: expected statement.
-    kt_victim = kt_victim + 1
-              ^
+File "game/scripts/actThree.rpy", line 340: expected ':' not found.
+    menu choose_pass24_2
+                        ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Mon Sep 19 19:46:39 2022
+Tue Sep 20 22:13:37 2022

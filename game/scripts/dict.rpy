@@ -29,6 +29,15 @@ default kt_villain = 0
 default kt_hero = 0
 default kt_victim = 0
 
+default kt_trusting = True
+default de_knows = False
+default de_accuses = False
+default de_sympathetic = False
+
+default route_dowiththis_checked = False
+default route_goingon_checked = False
+default route_wedonow_chcked = False
+
 # default ph_date = False
 
 # Animation

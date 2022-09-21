@@ -53,7 +53,7 @@ menu de_choice1:
     "He probably got it to give to another student.":
         jump de_choice1_b
 
-    "Maybe he didn't know what it was meant to be used for?":
+    "Maybe he isn't actually as smart as everyone is saying?":
         jump de_choice1_c
 
 label de_choice1_a:
@@ -73,8 +73,10 @@ label de_choice1_b:
     jump end_bookshelf
 
 label de_choice1_c:
-    de "In a room filled wiht books it's certainly possible he would forget every book he had."
-    de "It's possible another student gave it to him for safekeeping, knowing that he wouldn't draw much suspicion."
+    de "Perhaps the cult of personality around him has gotten out of hand."
+    de "Maybe he never was as smart as they said."
+    de "I would be surprised that he lasted this long."
+    de "But I guess it benefits no one at this university to reveal their best student as a fraud."
 
     $ kt_victim = kt_victim + 1
     jump end_bookshelf
@@ -160,14 +162,10 @@ label item_ingredients2:
 
     de "Well I bet I can get that dog to hand over the book he’s protecting with a little state sponsored bribery."
     
-    #"-- Fills bowl with food"
+    "-- Fills bowl with food"
     hide prop_canfull with easeoutbottom
-    show prop_bowl at truecenter with easeintop
-
-    de "Here buddy, don’t you want some food?"
-    hide prop_bowl with easeoutbottom
     hide de_base_dark with dissolve
-
+    de "Here buddy, don’t you want some food?"
     "-- Dog growls"
     de "Huh, I guess he only eats the good stuff."
     de "Let's see what we can do for the spoiled mutt."
@@ -252,5 +250,5 @@ label end_ingredients2:
     jump actTwoOutro
 
 label actTwoOutro:
-    "DEBUG: Outro"
+    "DEBUG: End of Act Two"
     jump return_actTwo

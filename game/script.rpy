@@ -1,6 +1,18 @@
 ﻿# Start
 label start:
-    jump actOne
+    #jump actOne
+
+menu debug:
+    "DEBUG: CHOOSE AN ACT"
+
+    "Act One":
+        jump actOne
+
+    "Act Two":
+        jump actTwo
+
+    "Act Three":
+        jump actThree 
 
 label return_actOne:
     jump actTwo

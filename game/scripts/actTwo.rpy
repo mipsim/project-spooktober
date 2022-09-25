@@ -129,14 +129,14 @@ label item_ingredients1:
     de "Ingredients it seems, and not the kind you cook with."
     
     hide prop_ingredients with easeoutbottom
-    show prop_canfull at truecenter with easeintop
+    show prop_cancerb at truecenter with easeintop
 
     de "Well, I supposed you could cook with this one."
     #"-- Shows dog food 'Cerberus Chum'"
 
     de "But the rest are \"medicinal\" at best."
 
-    hide prop_canfull with easeoutbottom
+    hide prop_cancerb with easeoutbottom
     show prop_ingredients at truecenter with easeintop
 
     de "Let's see here, dogwart, milliweed, griffin's tongue, and snail urine."
@@ -158,12 +158,12 @@ label item_ingredients1:
 label item_ingredients2:
     #"-- Shows dog food 'Cerberus Chum'"
     show de_base_dark with dissolve
-    show prop_canfull at truecenter with easeintop
+    show prop_cancerb at truecenter with easeintop
 
     de "Well I bet I can get that dog to hand over the book he’s protecting with a little state sponsored bribery."
     
     "-- Fills bowl with food"
-    hide prop_canfull with easeoutbottom
+    hide prop_cancerb with easeoutbottom
     hide de_base_dark with dissolve
     de "Here buddy, don’t you want some food?"
     "-- Dog growls"
@@ -183,15 +183,15 @@ label item_ingredients2:
 
     #-- Show filled food bowl
     hide prop_canfull with easeoutbottom
-    show prop_bowl at truecenter with easeintop
+    show prop_bowlfull at truecenter with easeintop
     "-- Dog eats it excitedly"
-    hide prop_bowl with easeoutbottom
+    hide prop_bowlfull with easeoutbottom
     hide de_base_dark with dissolve
 
     de "Perfect, and if you don't mind I'm going to borrow this dog bed from you."
     de "Doesn't look particularly comfortable anyhow."
     
-    #"-- Show book cover"
+    #"-- Show journal"
     show de_base_dark with dissolve
     show prop_tome at truecenter with easeintop
 
@@ -202,9 +202,10 @@ label item_ingredients2:
     de "Dark Arts, Summoning Demons, Transforming Flesh, etc. etc."
     de "Not the kind of stuff you get into freshman year."
     de "These are some real \"I knew them before they were cool\" type spells."
+    de "He would need access to some seriously twisted study materials to come up with these kinds of spells."
 
 menu de_choice2:
-    de "Hmmm...How exactly would he have gotten a hold of this?"
+    de "How exactly would he get a hold of that?"
 
     "He stole it from the school's dark magic archives.":
         jump de_choice2_a
@@ -250,5 +251,5 @@ label end_ingredients2:
     jump actTwoOutro
 
 label actTwoOutro:
-    "DEBUG: End of Act Two"
+    #"DEBUG: End of Act Two"
     jump return_actTwo

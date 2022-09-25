@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "v0.0.7"
+define config.version = "v0.0.8"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -33,20 +33,13 @@ define gui.about = _p("""
     Visual Novel developed by CHQ
 
     Angela Do - Character Art
-
-    Annie Zhang - Art Direction, UI Art, Composer
-
-    Avery Weibel - Narrative Design
-
-    Eli Miller - Sound Design
-
+    Annie Zhang - Art Direction, Background & Concept Art, Composer
+    Eli Miller - Narrative & Sound Design
     Joseph Wang - Narrative Design
-
     Kat Gee - Concept Art
-
-    Michael Sim - Programming, Production
-
+    Michael Sim - Production, Programming
     Patrick Villegas - Narrative Director
+    Victor Dong - UI Art
 """)
 
 

@@ -1,7 +1,7 @@
 # Characters
 define mc = Character("You", color ="#33A9FF")
 define kt = Character("Kellum Triar", color ="#D53918")
-define de = Character("Detective", color ="#C19F97")
+define de = Character("Detective", color ="#774ec1")
 define ms = Character("Meat Sack", color ="#D53918")
 define st = Character("Stitch", color ="#D53918")
 define bb = Character("Big Brain", color ="#D53918")

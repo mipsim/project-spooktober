@@ -202,13 +202,14 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Choice buttons are used in the in-game menus.
 
-define gui.choice_button_width = 1185
-define gui.choice_button_height = None
+define gui.choice_button_width = 972
+define gui.choice_button_height = 104
 define gui.choice_button_tile = False
-define gui.choice_button_borders = Borders(150, 8, 150, 8)
+define gui.choice_button_borders = Borders(50, 8, 50, 8)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
+define gui.choice_button_text_yalign = 0.5
 define gui.choice_button_text_idle_color = "#50313e"
 define gui.choice_button_text_hover_color = "#90244f"
 define gui.choice_button_text_insensitive_color = "#444444"

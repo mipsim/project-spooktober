@@ -185,12 +185,12 @@ label actThree_Two:
     # Pass 23
     # SHOW CALPURNIA'S JOURNAL AT THIS SPECIFIC POINT
     show kt_base_dark at twoChar_xTwo with dissolve
-    show prop_tome at truecenter with easeintop
+    show prop_journal at truecenter with easeintop
 
     "The journal is quite obviously torn and tattered."
     "It's been beaten to smitherens, yet some of the pages are still left intact."
     
-    hide prop_tome
+    hide prop_journal
     with easeoutbottom
     show de_base at twoChar_xOne
     hide kt_base_dark

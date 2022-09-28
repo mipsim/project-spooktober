@@ -39,7 +39,15 @@ label item_bookshelf:
     de "It was required reading at my magic school, but I can't imagine it's part of any modern curriculum."
     de "Not that it means anything on its own, but let's just hope he doesn't identify with the main character too much."
     de "Ah, here's something different!"
+    
+    show de_base_dark with dissolve
+    show prop_bookofknow at truecenter with easeintop
+
     de "\"Skill Improvement 7th edition.\""
+
+    hide prop_bookofknow with easeoutbottom
+    hide de_base_dark with dissolve
+    
     de "These books are supposed to be banned from university."
     de "They use enchanted ink to automatically improve your magical aptitude."
     de "Useful for improving worker productivity, but it doesn't transfer any base knowledge of how the magic works."

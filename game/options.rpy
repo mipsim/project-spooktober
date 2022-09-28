@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Project Avadakadabra")
+define config.name = _("The Triar Incident")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "v0.0.8"
+define config.version = "v0.0.9"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -33,12 +33,19 @@ define gui.about = _p("""
     Visual Novel developed by CHQ
 
     Angela Do - Character Art
+
     Annie Zhang - Art Direction, Background & Concept Art, Composer
+
     Eli Miller - Narrative & Sound Design
+
     Joseph Wang - Narrative Design
+
     Kat Gee - Concept Art
+
     Michael Sim - Production, Programming
+
     Patrick Villegas - Narrative Director
+
     Victor Dong - UI Art
 """)
 
@@ -47,7 +54,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "ProjectAvadakadabra"
+define build.name = "TheTriarIncident"
 
 
 ## Sounds and music ############################################################

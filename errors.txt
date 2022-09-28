@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/actThree.rpy", line 340: expected ':' not found.
-    menu choose_pass24_2
-                        ^
+File "game/scripts/actOne_Brain.rpy", line 137: expected statement.
+    hilde_1cd
+             ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Tue Sep 20 22:13:37 2022
+Tue Sep 27 21:46:07 2022

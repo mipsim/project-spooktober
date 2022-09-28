@@ -1,43 +1,37 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the color property of style default:
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-Exception: Color string '#6A354A' must be 3, 4, 6, or 8 hex digits long.
+While running game code:
+  File "game/scripts/dict.rpy", line 6, in script
+    define hi = Character(hilde_name, color ="#D53918")
+  File "game/scripts/dict.rpy", line 6, in script
+    define hi = Character(hilde_name, color ="#D53918")
+  File "game/scripts/dict.rpy", line 6, in <module>
+    define hi = Character(hilde_name, color ="#D53918")
+NameError: name 'hilde_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\bootstrap.py", line 274, in bootstrap
     renpy.main.main()
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\main.py", line 660, in main
-    run(restart)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\main.py", line 76, in run
-    renpy.translation.init_translation()
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\translation\__init__.py", line 583, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\translation\__init__.py", line 672, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 796, in renpy.style.rebuild
-  File "style.pyx", line 789, in renpy.style.build_styles
-  File "style.pyx", line 710, in renpy.style.build_style
-  File "style.pyx", line 707, in renpy.style.build_style
-  File "gen3-static/style_functions.pyx", line 323, in style_functions.color_property
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\color.py", line 167, in __new__
-    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
-Exception: Color string '#6A354A' must be 3, 4, 6, or 8 hex digits long.
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/scripts/dict.rpy", line 6, in script
+    define hi = Character(hilde_name, color ="#D53918")
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/scripts/dict.rpy", line 6, in script
+    define hi = Character(hilde_name, color ="#D53918")
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 2441, in execute
+    self.set()
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 2455, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1076, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scripts/dict.rpy", line 6, in <module>
+    define hi = Character(hilde_name, color ="#D53918")
+NameError: name 'hilde_name' is not defined
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
-Project Avadakadabra v0.0.7
-Sun Sep 25 10:49:22 2022
+The Triar Incident v0.0.9
+Tue Sep 27 22:00:40 2022

@@ -87,11 +87,11 @@ menu hilde_1ba:
 label hilde_1bb:
     hi "Ok, fine!"
     hi "I was failing your class. Is that what you wanted to hear?"
-    mc "Um... I didn't mean it like that."
+    mc "Um...I didn't mean it like that."
     hi "There is nothing more important to me than the expansion of humanity's knowledge, magical and scientific."
-    hi "After we get wiped off this planet by atom bomb or by satan sumoning it's all we have to leave begind."
+    hi "After we get wiped off this planet by atom bomb or by satan sumoning it's all we have to leave behind."
     hi "I know that..."
-    hi "I know how important it is... I really do..."
+    hi "I know how important it is...I really do..."
     hi "But..."
     hi "I just can't do it."
     hi "There's nothing more demotivating and boring than the pursuit of knowledge."
@@ -192,7 +192,7 @@ menu hilde_2:
 label hilde_2a:
     hi "No, I talked with him before this mess."
     hi "He seemed in a hurry, I think he was planning something big."
-    hi "As for what it was or where it's happening I can't really help you, sorry.:"
+    hi "As for what it was or where it's happening I can't really help you, sorry."
     mc "No, it's alright. I've actually learned a lot from talking with you."
     mc "Thanks."
 
@@ -213,7 +213,7 @@ label hilde_2b:
     mc "I was like you too. I still am to some degree."
     mc "There are things that I thought were really important to me."
     mc "But I just couldn't find the motivation to do it."
-    mc "I wanted to be a Grand Scholar when I was younger."
+    mc "I wanted to be a Hallowed Artificer when I was younger."
     mc "I trained hard for it, but even early on I knew I didn't have the chops for it."
     mc "In the end I settled for teaching."
     mc "Not just because it was important, but because I saw myself in that role."

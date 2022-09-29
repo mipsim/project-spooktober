@@ -131,6 +131,8 @@ label pass_11:
 label actThree_Two:
     scene bg3b with dissolve
 
+    play music "audio/finalchoice.mp3"
+
     # Pass 12
     "The light is blinding at first."
     "A harsh and violent red stains the entire room."
@@ -423,5 +425,5 @@ label pass25:
     #de "We can have it only affect three key pieces of evidence, for simplicity's sake."
 
 label actThreeOutro:
-    "DEBUG: End of Act Three"
+    #"DEBUG: End of Act Three"
     jump return_actThree

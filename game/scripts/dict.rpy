@@ -1,7 +1,7 @@
 # Characters
 define mc = Character("You", color ="#33A9FF")
 define de = Character("Detective", color ="#774ec1")
-define me = Character("Meethed", color ="#D53918")
+define me = Character("Issac", color ="#D53918")
 define st = Character("Stelivia", color ="#D53918")
 define hi = DynamicCharacter("hilde_name", color ="#D53918")
 define kt = Character("Kellum Triar", color ="#D53918")
@@ -27,6 +27,9 @@ image bg3b = "bg destroyedHall.png"
 # Variables
 ## Act One
 default me_checked = False
+default meat_1a_checked = False
+default meat_1b_checked = False
+default meat_1c_checked = False
 default st_checked = False
 default hi_checked = False
 default hilde_1a_checked = False

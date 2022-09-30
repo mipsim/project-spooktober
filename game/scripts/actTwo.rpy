@@ -3,6 +3,7 @@ label actTwo:
     scene bg2a with dissolve
 
     show de_base with easeinleft
+    $ detective_name = "Korvus"
 
     play music "audio/investigation.mp3"
     # ---------------------------------
@@ -260,4 +261,7 @@ label end_ingredients2:
 
 label actTwoOutro:
     #"DEBUG: End of Act Two"
+    de "Well, I just hope that professor found something useful."
+    scene bg0 with dissolve
+    $ act_two_checked = True
     jump return_actTwo

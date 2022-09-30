@@ -2,6 +2,7 @@
 label start:
     #jump actOne
 
+# DELETEME
 menu debug:
     "DEBUG: CHOOSE AN ACT"
 
@@ -15,9 +16,15 @@ menu debug:
         jump actThree 
 
 label return_actOne:
+    if act_two_checked == True:
+        jump actThree
     jump actTwo
 
+
 label return_actTwo:
+    if act_one_checked == False:
+        scene bg3a with dissolve
+        jump ChooseAct_One
     jump actThree
 
 label return_actThree:

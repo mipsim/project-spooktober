@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/scripts/actOne_Brain.rpy", line 137: expected statement.
-    hilde_1cd
-             ^
+File "game/scripts/actOne.rpy", line 76: expected statement.
+    actOne_choice1a
+                   ^
+
+File "game/scripts/actOne.rpy", line 79: expected statement.
+    actOne_choice1b
+                   ^
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Tue Sep 27 21:46:07 2022
+Thu Sep 29 23:11:55 2022

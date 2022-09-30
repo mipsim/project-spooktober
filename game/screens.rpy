@@ -396,12 +396,15 @@ style main_menu_vbox:
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
+    color "#891d25"
 
 style main_menu_title:
     properties gui.text_properties("title")
+    color "#891d25"
 
 style main_menu_version:
     properties gui.text_properties("version")
+    color "#891d25"
 
 
 ## Game Menu screen ############################################################
@@ -1274,6 +1277,7 @@ style notify_frame:
 
 style notify_text:
     properties gui.text_properties("notify")
+    color "#B7994E"
 
 
 ## NVL screen ##################################################################

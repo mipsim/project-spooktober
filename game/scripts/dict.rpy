@@ -1,9 +1,9 @@
 # Characters
-define mc = Character("You", color ="#33A9FF")
-define de = Character("Detective", color ="#774ec1")
-define me = Character("Issac", color ="#D53918")
-define st = Character("Stelivia", color ="#D53918")
-define hi = DynamicCharacter("hilde_name", color ="#D53918")
+define mc = Character("You", color ="#535353")
+define de = DynamicCharacter("detective_name", color ="#774ec1")
+define me = Character("Issac", color ="#CD9929")
+define st = Character("Stelivia", color ="#CD9929")
+define hi = DynamicCharacter("hilde_name", color ="#CD9929")
 define kt = Character("Kellum Triar", color ="#D53918")
 define who = Character("???", color ="FFFFFF")
 
@@ -15,11 +15,16 @@ image me_base_dark = "meethed_base_dark.png"
 image st_base = "stelivia_base.png"
 image st_base_dark = "stelivia_base_dark.png"
 image hi_base = "hilde_base.png"
-image hi_base_dark = "hilde_base_dark.png" 
+image hi_base_dark = "hilde_base_dark.png"
+image kt_sil = "kellum_silhouette.png"
+image kt_sil_gl = "kellum_silhouette_glow.png"
 image kt_base = "kellum_base.png"
 image kt_base_dark = "kellum_base_dark.png"
 
 # Backgrounds
+image bg0 = "bg black.png"
+image bg1 = "bg white.png"
+image bg0b = "bg hallway_dark.png"
 image bg2a = "bg KellumRoom.png"
 image bg3a = "bg hallway.png"
 image bg3b = "bg destroyedHall.png"
@@ -38,11 +43,13 @@ default hilde_1c_checked = False
 default hilde_2a_checked = False
 default hilde_2b_checked = False
 default num_hilde_checked = 4
+default act_one_checked = False
 
 ## Act Two
 default itemBookshelf_checked = False
 default itemInk_checked = False
 default itemIngredients_checked = False
+default act_two_checked = False
 
 ## Act Three
 default kt_villain = 0

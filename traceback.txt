@@ -1,37 +1,29 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/dict.rpy", line 6, in script
-    define hi = Character(hilde_name, color ="#D53918")
-  File "game/scripts/dict.rpy", line 6, in script
-    define hi = Character(hilde_name, color ="#D53918")
-  File "game/scripts/dict.rpy", line 6, in <module>
-    define hi = Character(hilde_name, color ="#D53918")
-NameError: name 'hilde_name' is not defined
+  File "game/scripts/actTwo.rpy", line 10, in script
+    de "So this is the room in question..."
+NameError: name 'detective_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\bootstrap.py", line 274, in bootstrap
-    renpy.main.main()
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/scripts/dict.rpy", line 6, in script
-    define hi = Character(hilde_name, color ="#D53918")
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/scripts/dict.rpy", line 6, in script
-    define hi = Character(hilde_name, color ="#D53918")
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 2441, in execute
-    self.set()
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 2455, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "game/scripts/actTwo.rpy", line 10, in script
+    de "So this is the room in question..."
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\character.py", line 1248, in __call__
+    who = renpy.python.py_eval(who)
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1083, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1076, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/scripts/dict.rpy", line 6, in <module>
-    define hi = Character(hilde_name, color ="#D53918")
-NameError: name 'hilde_name' is not defined
+  File "<none>", line 1, in <module>
+NameError: name 'detective_name' is not defined
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
-The Triar Incident v0.0.9
-Tue Sep 27 22:00:40 2022
+The Triar Incident v0.0.10
+Thu Sep 29 23:12:38 2022

@@ -1,6 +1,8 @@
 label actThree:
     # Setup ---------------------------
     scene bg3a with dissolve
+    
+    $ detective_name = "Korvus"
 
     play music "audio/investigation.mp3"
     # ----------------------------------

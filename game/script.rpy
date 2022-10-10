@@ -30,7 +30,15 @@ label return_actThree:
     jump ending
 
 label ending:
-    scene bg black
-    with dissolve
+
+    if persistent.good_ending == True:
+        $ num_endings += 1
+    if persistent.bad_ending == True:
+        $ num_endings += 1
+    if persistent.evil_ending == True:
+        $ num_endings += 1
+    if persistent.martyr_ending == True:
+        $ num_endings += 1
+    "[num_endings] out of 4 Endings Found"
 
     return

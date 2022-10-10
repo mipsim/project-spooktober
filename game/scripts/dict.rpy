@@ -34,6 +34,11 @@ image kt_sil = "kellum_silhouette.png"
 image kt_sil_gl = "kellum_silhouette_glow.png"
 image kt_base = "kellum_base.png"
 image kt_base_dark = "kellum_base_dark.png"
+image kt_angry = "kellum_angry.png"
+image kt_evil = "kellum_evil.png"
+image kt_evildark = "kellum_evildark.png"
+image kt_surprised = "kellum_surprised.png"
+image kt_surprised_dark = "kellum_surprised_dark.png"
 
 # Backgrounds
 image bg0 = "bg black.png"
@@ -45,6 +50,10 @@ image bg3b = "bg destroyedHall.png"
 
 # Variables
 default num_endings = 0
+default persistent.good_ending = False
+default persistent.evil_ending = False
+default persistent.martyr_ending = False
+default persistent.bad_ending = False
 
 ## Act One
 default me_checked = False

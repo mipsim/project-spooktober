@@ -23,7 +23,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "v1.0.0"
+define config.version = "v1.1.0"
 
 #define gui.show_version = True
 
@@ -35,13 +35,13 @@ define gui.about = _p("""
 
     Angela Do - Character Art
 
-    Annie Zhang - Art Direction, Background & Concept Art, Composer
+    Annie Zhang - Art Direction, Concept and Background Art, Composer
 
-    Eli Miller - Narrative & Sound Design
+    Eli Miller - Writer
 
-    Joseph Wang - Narrative Design
+    Joseph Wang - Writer
 
-    Kat Gee - Concept Art
+    Kat Gee - Concept, Character, and Prop Art
 
     Michael Sim - Production, Programming
 

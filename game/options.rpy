@@ -18,13 +18,14 @@ define config.name = _("The Triar Incident")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
 
-define config.version = "v0.0.11"
+define config.version = "v1.0.0"
 
+#define gui.show_version = True
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.

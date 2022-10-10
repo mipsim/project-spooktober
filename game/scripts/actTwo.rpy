@@ -3,14 +3,23 @@ label actTwo:
     scene bg2a with dissolve
 
     show de_base with easeinleft
-    $ detective_name = "Korvus"
-
-    play music "audio/investigation.mp3"
     # ---------------------------------
 
     de "So this is the room in question..."
+
+    hide de_base
+    show de_look
+
     de "Smells like wet dog, but otherwise it seems about par for the course."
+
+    hide de_look
+    show de_sus
+
     de "In fact, it's rather tidy given the current state of the university."
+    
+    hide de_sus
+    show de_base
+
     de "Let's start by taking a look around."
 
 menu choose_item:
@@ -31,24 +40,39 @@ menu choose_item:
 
 label item_bookshelf:
     de "Let's see, anything interesting?"
+
+    hide de_base
+    show de_look
+
     de "\"Legal History of Transmogrification\""
     de "\"Counter Inductive Spell Structures for Undergrads\""
     de "\"Notes on the Use of Spark Spells in General Combat.\""
     de "Decent study material, but none of it is particularly relevant to the case at hand."
+
+    hide de_look
+    show de_sus
+
     de "Hmmm...this one seems interesting."
     de "\"Caster in the Rye\""
     de "It was required reading at my magic school, but I can't imagine it's part of any modern curriculum."
     de "Not that it means anything on its own, but let's just hope he doesn't identify with the main character too much."
+    
+    hide de_sus
+    show de_surprised
+
     de "Ah, here's something different!"
     
-    show de_base_dark with dissolve
+    show de_surprised_dark with dissolve
     show prop_bookofknow at truecenter with easeintop
 
     de "\"Skill Improvement 7th edition.\""
 
     hide prop_bookofknow with easeoutbottom
-    hide de_base_dark with dissolve
+    hide de_surprised_dark with dissolve
     
+    hide de_surprised
+    show de_base
+
     de "These books are supposed to be banned from university."
     de "They use enchanted ink to automatically improve your magical aptitude."
     de "Useful for improving worker productivity, but it doesn't transfer any base knowledge of how the magic works."
@@ -97,23 +121,38 @@ label end_bookshelf:
 label item_ink:    
     de "Spilled ink on the table, a classic question of causality."
     de "Of all the thousands of possible actions, not to mention the addition of spells, incantations, imbibements, enchantments and all the rest."
+
+    hide de_base
+    show de_look
+
     de "Out of all of those I have to narrow it down to a single..."
     
     #"-- Display Paw Print"    
-    show de_base_dark with dissolve
+    show de_look_dark with dissolve
     show prop_pawprints at truecenter with easeintop
 
     de "Oh, it seems he has a dog."
 
     hide prop_pawprints with easeoutbottom
-    hide de_base_dark with dissolve
+    hide de_look_dark with dissolve
 
     de "Well, I guess not everything has to be an enigma."
+
+    hide de_look
+    show de_sus
+
     de "It seems this ferocious beast has left a trail all the way back to its den: the lower cubby of the autobiography section."
+
     "-- Opens cubby"
     "-- Dog growls"
+
+    hide de_sus
+    show de_base
+
     de "Well met familiar, may I ask what you're sitting on?"
+
     "-- Dog growls again"
+
     de "I see."
     de "Well I won't make any headway with you by just asking nicely."
     
@@ -172,15 +211,33 @@ label item_ingredients2:
     de "Well I bet I can get that dog to hand over the book he’s protecting with a little state sponsored bribery."
     
     "-- Fills bowl with food"
+
     hide prop_cancerb with easeoutbottom
     hide de_base_dark with dissolve
+
+    hide de_base
+    show de_look
+
     de "Here buddy, don’t you want some food?"
+    
     "-- Dog growls"
+    
+    hide de_look
+    show de_sus
+
     de "Huh, I guess he only eats the good stuff."
     de "Let's see what we can do for the spoiled mutt."
+    
     "-- Closes the Cubby"
+
+    hide de_sus
+    show de_look
+
     de "Just a quick little swap...and we are good to go."
     
+    hide de_look
+    show de_base
+
     #-- Show a sloppily filled can of Curio
     show de_base_dark with dissolve
     show prop_canfull at truecenter with easeintop
@@ -188,30 +245,43 @@ label item_ingredients2:
     de "Alright, I got you the good stuff this time."
     de "You like Curio don't you?"
     de "Look I got a fresh new can of it for you"
+
     "-- Dog is excited"
 
     #-- Show filled food bowl
     hide prop_canfull with easeoutbottom
     show prop_bowlfull at truecenter with easeintop
+
     "-- Dog eats it excitedly"
+
     hide prop_bowlfull with easeoutbottom
     hide de_base_dark with dissolve
 
     de "Perfect, and if you don't mind I'm going to borrow this dog bed from you."
     de "Doesn't look particularly comfortable anyhow."
     
+    hide de_base
+    show de_surprised
+
     #"-- Show journal"
-    show de_base_dark with dissolve
+    show de_surprised_dark with dissolve
     show prop_tome at truecenter with easeintop
 
     de "Well I'll be, I believe we found the smoking wand."
     hide prop_tome with easeoutbottom
-    hide de_base_dark with dissolve
+    hide de_surprised_dark with dissolve
 
     de "Dark Arts, Summoning Demons, Transforming Flesh, etc. etc."
     de "Not the kind of stuff you get into freshman year."
+
+    hide de_surprised
+    show de_base
+
     de "These are some real \"I knew them before they were cool\" type spells."
     de "He would need access to some seriously twisted study materials to come up with these kinds of spells."
+
+    hide de_base
+    show de_sus
 
 menu de_choice2:
     de "How exactly would he get a hold of that?"
@@ -250,18 +320,35 @@ label de_choice2_c:
     jump end_ingredients2
 
 label end_ingredients2:
+    hide de_sus
+    show de_base
+
     de "Either way it puts those ingredients into context."
     de "It's no simple potion he was working on, nothing in this book would be as benign as that."
+
+    hide de_base
+    show de_look
+
     de "Here we go, page 478."
     de "Ingredients required: Dogwart, Snail Urine, Griffin's tongue...and a bunch of other stuff he would be able to find."
     de "The problem I'm having is that this doesn't exactly look explosive in nature, at least not like we've seen around the school."
+
+    hide de_look
+    show de_sus
+
     de "Could he be working on something else? Something even worse?"
 
     jump actTwoOutro
 
 label actTwoOutro:
     #"DEBUG: End of Act Two"
+
+    hide de_sus
+    show de_base
+
     de "Well, I just hope that professor found something useful."
+
     scene bg0 with dissolve
     $ act_two_checked = True
+
     jump return_actTwo

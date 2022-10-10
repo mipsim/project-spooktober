@@ -1,29 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/actTwo.rpy", line 10, in script
-    de "So this is the room in question..."
-NameError: name 'detective_name' is not defined
+  File "game/scripts/actThree.rpy", line 522, in script
+    if $ kt_hero > kt_victim and $ kt_hero > kt_villain:
+SyntaxError: invalid syntax (game/scripts/actThree.rpy, line 522)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/actTwo.rpy", line 10, in script
-    de "So this is the room in question..."
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\character.py", line 1248, in __call__
-    who = renpy.python.py_eval(who)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1083, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1076, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name 'detective_name' is not defined
+  File "game/scripts/actThree.rpy", line 522, in script
+    if $ kt_hero > kt_victim and $ kt_hero > kt_villain:
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\ast.py", line 2115, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1081, in py_eval
+    code = py_compile(code, 'eval')
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 1018, in py_compile
+    raise e
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 970, in py_compile
+    raise orig_e
+  File "D:\Ren'Py\renpy-7.4.9-sdk\renpy\python.py", line 963, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/scripts/actThree.rpy, line 522)
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
-The Triar Incident v0.0.10
-Thu Sep 29 23:12:38 2022
+The Triar Incident v0.0.11
+Fri Sep 30 20:26:48 2022

@@ -1,19 +1,18 @@
 ﻿# Start
 label start:
-    #jump actOne
+    jump actOne
 
-# DELETEME
-menu debug:
-    "DEBUG: CHOOSE AN ACT"
+#menu debug:
+#    "DEBUG: CHOOSE AN ACT"
 
-    "Act One":
-        jump actOne
+#    "Act One":
+#        jump actOne
 
-    "Act Two":
-        jump actTwo
+#    "Act Two":
+#        jump actTwo
 
-    "Act Three":
-        jump actThree 
+#    "Act Three":
+#        jump actThree 
 
 label return_actOne:
     if act_two_checked == True:
